@@ -1,0 +1,13 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_TOTEM_7RACKER_LEFT
+	def_bool $(shields_list_contains,totem_7racker_left)
+	select SPI
+
+config SHIELD_TOTEM_7RACKER_RIGHT
+	def_bool $(shields_list_contains,totem_7racker_right)
+	select SPI
+
+config SHIELD_TOTEM_7RACKER_DONGLE
+	def_bool $(shields_list_contains,totem_7racker_dongle)
