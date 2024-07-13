@@ -1,0 +1,17 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "totem_7racker.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&shifter 15 GPIO_ACTIVE_HIGH>
+        , <&shifter  1 GPIO_ACTIVE_HIGH>
+        , <&shifter  2 GPIO_ACTIVE_HIGH>
+        , <&shifter  3 GPIO_ACTIVE_HIGH>
+        , <&shifter  4 GPIO_ACTIVE_HIGH>
+        ;
+};
